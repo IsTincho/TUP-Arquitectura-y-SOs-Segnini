@@ -1,0 +1,14 @@
+#!/bin/bash
+#Calcular días entre dos fechas
+echo $(date +'%d/%m/%Y %H:%M')
+echo "Primer fecha"
+read -p "Ingrese dia: " Dia1
+read -p "Ingrese mes: " Mes1
+read -p "Ingrese año: " Anio1
+
+echo "Segunda fecha"
+read -p "Ingrese dia: " Dia2
+read -p "Ingrese mes: " Mes2
+read -p "Ingrese año: " Anio2
+
+echo Hay $((Dia1 - Dia2)) dias de diferencia, $((Mes1 - Mes2)) meses y $((Anio1 - Anio2)) años
