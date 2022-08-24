@@ -6,9 +6,13 @@ read -p "Ingrese dia: " Dia1
 read -p "Ingrese mes: " Mes1
 read -p "Ingrese año: " Anio1
 
+diasTotales1=$Dia1+$Mes1*30+$Anio1*365
+
 echo "Segunda fecha"
 read -p "Ingrese dia: " Dia2
 read -p "Ingrese mes: " Mes2
 read -p "Ingrese año: " Anio2
 
-echo Hay $((Dia1 - Dia2)) dias de diferencia, $((Mes1 - Mes2)) meses y $((Anio1 - Anio2)) años
+diasTotales2=$Dia2+$Mes2*30+$Anio2*365
+
+echo "Hay" $((diasTotales2 - diasTotales1)) "dias de diferencia"
