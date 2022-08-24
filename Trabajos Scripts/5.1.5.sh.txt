@@ -2,15 +2,13 @@
 #Definir si un número es o no primo
 read -p "Ingresa un numero : " num
 acum=0
-contador=0
+contador=1
 termina=$num
 while [ $termina -ge $contador ]
 do
- echo $contador
  if [[ $(($num%$contador)) -eq 0 ]];
   then
   let acum=$acum+1
-  echo $acum
  fi
  let contador=$contador+1
 done
